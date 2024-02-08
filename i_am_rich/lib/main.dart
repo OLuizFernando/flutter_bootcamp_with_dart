@@ -11,8 +11,7 @@ void main() {
       ),
       body: const Center(
         child: Image(
-          image: NetworkImage(
-              'https://passiveincomemd.com/wp-content/uploads/2017/05/rich-vs-wealthy-1.jpg'),
+          image: AssetImage('images/diamong.png'),
         ),
       ),
     ),
