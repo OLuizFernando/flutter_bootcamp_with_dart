@@ -7,11 +7,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white12,
         body: SafeArea(
-            child: Column(children: [
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           CircleAvatar(
             radius: 50,
             backgroundColor: Colors.white10,
@@ -35,64 +36,52 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.5),
           ),
           SizedBox(
-            height: 10,
-          ),
-          Container(
-            height: 1,
+            height: 20,
             width: 100,
-            color: Colors.white38,
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            color: Colors.white38,
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            padding: EdgeInsets.all(10),
-            child: const Row(
-              children: [
-                Icon(
-                  Icons.email,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'luizfernandodematoscarvalho@gmail.com',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'SourceSans3'),
-                )
-              ],
+            child: Divider(
+              color: Colors.white38,
             ),
           ),
-          Container(
+          Card(
             color: Colors.white38,
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            padding: EdgeInsets.all(10),
-            child: const Row(
-              children: [
-                Icon(
-                  Icons.phone,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  '+55 11 98099-1245',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'SourceSans3'),
-                )
-              ],
-            ),
-          )
+            child: Padding(
+                padding: EdgeInsets.all(10),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    'luizf.carvalho42@fatec.sp.gov.br',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'SourceSans3'),
+                  ),
+                )),
+          ),
+          Card(
+            color: Colors.white38,
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            child: Padding(
+                padding: EdgeInsets.all(10),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    '+55 11 98099-1245',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'SourceSans3'),
+                  ),
+                )),
+          ),
         ])),
       ),
     );
