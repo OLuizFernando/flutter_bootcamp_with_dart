@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                     'luizf.carvalho42@fatec.sp.gov.br',
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'SourceSans3'),
                   ),
@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
                     '+55 11 98099-1245',
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'SourceSans3'),
                   ),
